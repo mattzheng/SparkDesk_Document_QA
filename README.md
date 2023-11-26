@@ -1,6 +1,9 @@
 # SparkDesk_Document_QA
 
+> 这个项目笔者想: 让`ChuanhuChatGPT`帮我开发前端;让类似sparkdesk帮我开发后台的知识库;我就负责组装一下?
+
 博客地址：[讯飞星火知识库文档问答Web API的使用（二）](https://blog.csdn.net/sinat_26917383/article/details/134599259)
+
 
 ![在这里插入图片描述](https://github.com/mattzheng/SparkDesk_Document_QA/blob/main/sparkdesk.png)
 
