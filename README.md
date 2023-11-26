@@ -53,13 +53,21 @@ pip install requests_toolbelt -i https://pypi.tuna.tsinghua.edu.cn/simple
 上传知识库文档数据，目前支持 doc/docx、pdf、md、txt 格式，单文件大小不超过 20MB，不超过 100W 字符。
 
 文档上传参数含义：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/0d39c6bc36e14c8eabb13ad99f45d491.png)
+
 文档上传返回参数详情：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/26d4b17fff284faba2140428de3d299a.png)
+
 文档总结参数请求：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/8417791fa08c4089acd89f5385f96b49.png)
+
 文档总结输出内容：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/ba096948dfb64e9cac64044cf2002c44.png)
+
 
 
 
@@ -99,15 +107,21 @@ pip install requests_toolbelt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 ## 2.2 文档对话
+
 这里本来是支持流式输出的，笔者改成了一次性全部输出，是通过global的方式
+
 此时额外学了一下websocket：[python中使用websocket调用、获取、保存大模型API](https://blog.csdn.net/sinat_26917383/article/details/134124585)
 
 官方文档：[ChatDoc](https://www.xfyun.cn/doc/spark/ChatDoc-API.html#%E4%B8%89%E3%80%81%E6%8E%A5%E5%8F%A3%E5%88%97%E8%A1%A8) 
 
 文档对话的参数：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/89f72c4f3a3c46788dc8f6ab5b54d0b1.png)
+
 输出参数详情：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/834a0c54ffcf43adafb315a44f1662d6.png)
+
 
 若返回 fileRefer 为空，提示 "抱款，在文档中没有找到与提问相关的内容，请尝试换个问题问问吧。"表示提问未匹配到文档内容，可以降低chatExtends.wikiFilterScore以降低匹配阈值，也可以开启chatExtends.sparkWhenWithoutEmbedding用大模型兜底
 
@@ -144,8 +158,11 @@ recep_mesg = doc_qa.chat(body)
 doc_qa.embellish_message_func(recep_mesg)
 ```
 其中，
+
 websocket是把一句话流式，一个片段一个片段的输出，`embellish_message_func`就是把这些拼装起来；
+
 body中`chatExtends` 可以不设置，也有默认；`fileIds` 是之前上传的field，可以支持多个field
+
 
 
 
@@ -184,5 +201,6 @@ recep_mesg
 
 
 ## 2.3 其他知识库高级功能
+
 > 星火知识库服务还提供 自定义切分、OCR 识别、文档内容查询、内容相似度检索等功能，如有需要请联系cbg_open_ml@iflytek.com
 貌似没理我，暂时没申请到...
