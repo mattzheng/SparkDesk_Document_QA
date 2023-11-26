@@ -2,7 +2,7 @@
 
 博客地址：[讯飞星火知识库文档问答Web API的使用（二）](https://blog.csdn.net/sinat_26917383/article/details/134599259)
 
-![在这里插入图片描述]((https://github.com/mattzheng/SparkDesk_Document_QA/blob/main/sparkdesk.png))
+![在这里插入图片描述](https://github.com/mattzheng/SparkDesk_Document_QA/blob/main/sparkdesk.png)
 
 # 1 SparkDesk的文档问答
 SparkDesk的文档问答模块相关文档与地址：
