@@ -88,10 +88,10 @@ doc_qa = Document_Q_And_A(APPId, APISecret)
 
 
 # 文件
-valid_files_group = {'背影.txt':'27c64900ad6643c1a958af920942e461',                     
-                    '人工智能生成内容白皮书 2022.pdf':'b4649d36cb0c477e911bb5fb5ef9736e',
-                    '2023AIGC市场研究报告及ChatGPT推动的变革趋势与投资机会-甲子光年.pdf':'66393ee0bf5441e5bb606673f414b353',
-                    'AIGC+AI生成内容产业展望报告-量子位-34页.pdf':'1e7a466009a645c6a4ff7e46784e4598'
+valid_files_group = {'背影.txt':'xxx',                     
+                    '人工智能生成内容白皮书 2022.pdf':'xxx',
+                    '2023AIGC市场研究报告及ChatGPT推动的变革趋势与投资机会-甲子光年.pdf':'xxx',
+                    'AIGC+AI生成内容产业展望报告-量子位-34页.pdf':'44xx'
                      }
 
 
